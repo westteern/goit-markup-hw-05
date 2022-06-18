@@ -6,6 +6,7 @@
 	--primery-bcg-color: #ffffff;
 	--primery-icon-color: rgba(175, 177, 184, 1);
 	--prime-animation: cubic-bezier(0.4, 0, 0.2, 1);
+	--prime-transition-timing-function: 250ms;
 }
 body {
 	background-color: var(--primery-bcg-color);
@@ -99,7 +100,7 @@ span {
 
 	text-decoration: none;
 
-	transition: color 250ms var(--prime-animation);
+	transition: color var(--prime-transition-timing-function) var(--prime-animation);
 	
 }
 .site-nav .link:hover,
@@ -158,7 +159,7 @@ span {
 
 	text-decoration: none;
 
-	transition: color 250ms var(--prime-animation);
+	transition: color var(--prime-transition-timing-function) var(--prime-animation);
 }
 .contacts-list-icon {
 	margin-right: 10px;
@@ -226,7 +227,7 @@ span {
 
 	cursor: pointer;
 
-	transition: background-color 250ms var(--prime-animation);
+	transition: background-color var(--prime-transition-timing-function) var(--prime-animation);
 }
 .hero-button:hover,
 .hero-button:focus,
@@ -310,12 +311,13 @@ span {
 	position: absolute;	
 	bottom: 0;
 
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
+	height: 70px;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-top: 27px;
-	padding-bottom: 27px;	
 	
 	text-align: center;
 	font-weight: 700;
@@ -397,8 +399,8 @@ span {
 
 	border-radius: 50px;
 
-	transition: color 250ms var(--prime-animation),
-	background-color 250ms var(--prime-animation);
+	transition: color var(--prime-transition-timing-function) var(--prime-animation),
+	background-color var(--prime-transition-timing-function) var(--prime-animation);
 }
 .social-list-icon {
 	fill: currentColor;
@@ -433,8 +435,8 @@ span {
 	border-radius: 4px;
 	fill: #afb1b8;
 
-	transition: fill 250ms var(--prime-animation),
-			border 250ms var(--prime-animation);
+	transition: fill var(--prime-transition-timing-function) var(--prime-animation),
+			border var(--prime-transition-timing-function) var(--prime-animation);
 	
 }
 .client-list-icom {
@@ -476,7 +478,7 @@ span {
 
 	text-decoration: none;
 	
-	transition: color 250ms var(--prime-animation)
+	transition: color var(--prime-transition-timing-function) var(--prime-animation)
 }
 .address-list .link {
 	display: block;
@@ -516,7 +518,7 @@ span {
 	background-color: rgba(255, 255, 255, 0.1);
 	color: var(--second-accent-color);
 	
-	transition: background-color 250ms var(--prime-animation);
+	transition: background-color var(--prime-transition-timing-function) var(--prime-animation);
 }
 .footer-social-list .link:hover,
 .footer-social-list .link:focus {
@@ -550,8 +552,9 @@ span {
 	border: none;
 	text-decoration: none;
 
-	transition: background-color 250ms var(--prime-animation),
-	color 250ms var(--prime-animation), box-shadow 250ms var(--prime-animation);
+	transition: background-color var(--prime-transition-timing-function) var(--prime-animation),
+	color var(--prime-transition-timing-function) var(--prime-animation),
+	 box-shadow var(--prime-transition-timing-function) var(--prime-animation);
 }
 .filter-list .button:hover,
 .filter-list .button:focus,
@@ -574,7 +577,7 @@ span {
 	display: block;
 	text-decoration: none;
 
-	transition: box-shadow 250ms var(--prime-animation);	
+	transition: box-shadow var(--prime-transition-timing-function) var(--prime-animation);	
 }
 .work-link .box {
 	position: relative;
@@ -598,7 +601,7 @@ span {
 	background: rgba(33, 150, 243, 0.9);
 
 	transform: translateY(calc(+100% + 1px));
-	transition: transform 250ms var(--prime-animation);
+	transition: transform var(--prime-transition-timing-function) var(--prime-animation);
 }
 .work-link:hover,
 .work-link:focus {
